@@ -12,9 +12,10 @@ def read_input():
         filename = input()
         if filename != "a":
             f = open("./tests/"+filename, "r")
-            P = f.readline()
-            T = f.read()
+            frl = f.readlines()
             f.close()
+            P = frl[0]
+            T = frl[1]
     elif "I" in switch:
         # input from keyboard
         P = input()
