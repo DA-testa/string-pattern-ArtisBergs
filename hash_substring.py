@@ -9,9 +9,9 @@ def read_input():
     switch = input()
     if "F" in switch:
         # input from file
-        filename = input()
+        filename = "06"
         if filename != "a":
-            f = open("./tests/"+filename, "r")
+            f = open("./tests/"+filename)
             frl = f.readlines()
             f.close()
             P = frl[0]
