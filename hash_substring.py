@@ -13,7 +13,7 @@ def read_input():
         if filename != "a":
             f = open("./tests/"+filename, "r")
             P = f.readline()
-            T = f.readline()
+            T = f.read()
             f.close()
     elif "I" in switch:
         # input from keyboard
